@@ -1,0 +1,45 @@
+#wrapper {
+  background: $white;
+
+
+  .breadcrumb {
+    padding-block: 1em;
+    background: $gray;
+
+    &[data-depth="1"] {
+      display: none;
+    }
+
+    ol {
+      width: fit-content;
+      padding-left: 0;
+      margin-bottom: 0;
+      font-size: 0.75em;
+      font-weight: 600;
+    }
+
+    li {
+      display: inline;
+
+      &::after {
+        margin: 0.3125rem;
+        color: $black;
+        content: "/";
+      }
+
+      &:last-child {
+        margin: 0;
+        color: $black;
+        content: "/";
+
+        &::after {
+          content: "";
+        }
+      }
+
+      a {
+        color: $gray-darker;
+      }
+    }
+  }
+}

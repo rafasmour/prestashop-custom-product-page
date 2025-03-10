@@ -1,0 +1,8 @@
+*
+
+!themes
+!themes/**/*
+!.gitignore
+!docker-compose.yml
+!LICENSE
+!README.md

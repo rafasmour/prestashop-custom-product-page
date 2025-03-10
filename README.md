@@ -1,0 +1,1 @@
+# custom product page for classic theme
