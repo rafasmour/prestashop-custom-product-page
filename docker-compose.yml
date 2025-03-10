@@ -7,7 +7,7 @@ services:
       mysql:
         condition: service_healthy
     environment:
-      - PS_DOMAIN=localhost
+      - PS_DOMAIN=138.199.216.191
       - INIT_SCRIPTS_DIR=/tmp/init-scripts
     ports:
       - 80:80
@@ -16,6 +16,9 @@ services:
       - type: bind
         source: ./themes/classic-theme
         target: /var/www/html/themes/classic-theme
+      - type: bind
+        source: ./modules/activeproductexportxml
+        target: /var/www/html/modules/activeproductexportxml
 
   mysql:
     image: mariadb:lts

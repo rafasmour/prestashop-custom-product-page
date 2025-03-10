@@ -1,17 +1,21 @@
 #wrapper {
   background: $white;
-
+  overflow: hidden;
 
   .breadcrumb {
     padding-block: 1em;
+    background: transparent;
     background: $gray;
-
+    position: relative;
+    width: 120vw;
+    left: -20vw;
     &[data-depth="1"] {
       display: none;
     }
 
     ol {
-      width: fit-content;
+      width: 70%;
+      margin-inline: auto;
       padding-left: 0;
       margin-bottom: 0;
       font-size: 0.75em;
