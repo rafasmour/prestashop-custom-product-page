@@ -7,14 +7,14 @@
     background: transparent;
     background: $gray;
     position: relative;
-    width: 120vw;
-    left: -20vw;
+    width: 300vw;
+    left: -100vw;
     &[data-depth="1"] {
       display: none;
     }
 
     ol {
-      width: 70%;
+      width: 50vw;
       margin-inline: auto;
       padding-left: 0;
       margin-bottom: 0;
